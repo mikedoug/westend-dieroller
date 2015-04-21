@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body style="margin-left: 25px; margin-right: 25px">
+    <h1>Die Roller!</h1>
+    Enter the number of dice + or - pips and press enter.  Example: 7+2 or 7-2 means 7D6 + 2 <br /><br />
+    Some other commands:
+      <ul>
+        <li>* or = will clear the results table</li>
+        <li>- will redo the last roll with one less die</li>
+        <li>Enter will redo the last roll exactly</li>
+        <li>c will add a character point to the last roll.</li>
+      </ul>
+
+    <table cellpadding=10px><row>
+      <td width=33% valign=top>
+        <form target="#">
+          Dice Entry: <input class="dieInput" id='q' type="text" value="" />
+
+          <table class="resultsTable">
+            <thead>
+              <row>
+                <th align="left">Roll</th>
+                <th width=75px>Total</th>
+                <th align="left">Dice</th>
+                <th align="left" style="padding-left: 10px">Description</th>
+              </row>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </form>
+      </td>
+
+      <td width=33% valign=top>
+        <form target="#">
+          Dice Entry: <input class="dieInput" id='w' type="text" value="" />
+
+          <table class="resultsTable">
+            <thead>
+              <row>
+                <th align="left">Roll</th>
+                <th width=75px>Total</th>
+                <th align="left">Dice</th>
+                <th align="left" style="padding-left: 10px">Description</th>
+              </row>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </form>
+      </td>
+
+      <td width=33% valign=top>
+        <form target="#">
+          Dice Entry: <input class="dieInput" id='e' type="text" value="" />
+
+          <table class="resultsTable">
+            <thead>
+              <row>
+                <th align="left">Roll</th>
+                <th width=75px>Total</th>
+                <th align="left">Dice</th>
+                <th align="left" style="padding-left: 10px">Description</th>
+              </row>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </form>
+      </td>
+
+    </row></table>
+  </body>
+
+  <script src="roller.js"></script>
+</html>
